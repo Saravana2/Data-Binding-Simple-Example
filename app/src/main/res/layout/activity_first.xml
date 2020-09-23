@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.example.databinding.FirstActivity" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:layout_margin="8dp"
+                android:text="Data Binding variables"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:onClick="@{()-> activity.onVariableBindingClicked()}"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:layout_margin="8dp"
+                android:text="Recycler View Adapter"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:onClick="@{()-> activity.onRecyclerViewClicked()}"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:layout_margin="8dp"
+                android:text="Reactive Recycler View Adapter"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:onClick="@{()-> activity.onReactiveRecyclerViewClicked()}"/>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

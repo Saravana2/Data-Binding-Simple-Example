@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Data Binding</string>
+    <plurals name="likes">
+        <item quantity="zero">No Likes</item>
+        <item quantity="one">%d Like</item>
+        <item quantity="other">%d Likes</item>
+    </plurals>
+</resources>
