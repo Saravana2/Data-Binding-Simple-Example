@@ -73,3 +73,13 @@ class MyAdapter<T>(var layoutId:Int, var data:List<T>) : MyBaseAdapter(){
         this.adapter = adapter
     }
 ```
+
+```
+  <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_adapter"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            onClickHandler="@{listener}"
+            recyclerViewAdapter="@{list}" />
+```            
